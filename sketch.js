@@ -20,15 +20,15 @@ function preload(){
 
 function setup(){
   
-  createCanvas(windowWidth,windowHeight);
+  createCanvas();
 // Moving background
-path=createSprite(width/2,200);
+path=createSprite();
 path.addImage(pathImg);
 path.velocityY = 4;
 
 
 //creating boy running
-boy = createSprite(width/2,height-20,20,20);
+boy = createSprite();
 boy.addAnimation("SahilRunning",boyImg);
 boy.scale=0.08;
   
